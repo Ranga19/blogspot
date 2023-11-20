@@ -1,0 +1,14 @@
+ranganath
+{% extends 'myblog/base.html' %}
+
+{% block content %}
+
+<h1>Login</h1>
+<br>
+<form action="" method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" name="" id="" value="Login">
+</form>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'myblog/base.html' %}
+{% block content %}
+    <br>
+    <div class="container-add-post">
+        <form action="" method="post" class="form-group">
+            {% csrf_token %}
+            {{form.as_p}}
+            <a href="{% url 'home' %}" class="btn btn-secondary">Go Back</a>
+            <input type="submit" class="btn btn-success">
+        </form>
+    </div>
+
+<style>
+
+    .container-add-post {
+        padding: 20px;
+        width: 30rem;
+        margin: auto;
+        
+    }
+
+    .btn-success {
+        margin-right: 10px;
+    }
+</style>
+{% endblock %}

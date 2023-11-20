@@ -1,0 +1,12 @@
+{% extends 'myblog/base.html' %}
+
+{% block content %}
+
+<p>Are you sure to delete the post</p><br>
+<form action="" method="post">
+    {% csrf_token %}
+    <a href="{% url 'home' %}" class="btn btn-secondary">Go Back</a>
+    <input type="submit" class="btn btn-danger" value="Delete">
+</form>
+
+{% endblock %}
