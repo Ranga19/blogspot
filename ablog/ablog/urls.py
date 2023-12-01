@@ -22,4 +22,6 @@ urlpatterns = [
     path('', include('myblog.urls')),
     
     path('authentication/', include('authentication.urls')),
+
+    path('api/', include('api.urls')),
 ]
